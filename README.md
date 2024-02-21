@@ -5,12 +5,13 @@ Build client-server program:
 + Client: Receives boardcast packets from the server, gets ip address and TCP port information from the server.
            * establish a tcp connection to the server, send a message with the content: "Client hello;ip=client's ip address"
            * After receiving the ok message from the server, the client closes the connection to the server.
+  
 To run the above program, follow these steps:
-- Compile the Server program:
-gcc -o server main.c handle_tcp_connection.c broadcast_udp.c
+- Compile the program
+make all
 - Run the server file you just compiled
 ./server
-- Compile the Client program:
-gcc -o client client.c
 - Run the client file you just compiled
 ./client
+- Clean file
+make clean
