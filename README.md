@@ -5,9 +5,11 @@ Build client-server program:
 + Client: Receives boardcast packets from the server, gets ip address and TCP port information from the server.
            * establish a tcp connection to the server, send a message with the content: "Client hello;ip=client's ip address"
            * After receiving the ok message from the server, the client closes the connection to the server.
-  
+
 To run the above program, follow these steps:
 - Compile the program: make all
 - Run the server file you just compiled: ./server
 - Run the client file you just compiled: ./client
 - Clean file: make clean
+
+Note: to run this program you need 2 computers on the same network: one running the server file and one running the client file.
