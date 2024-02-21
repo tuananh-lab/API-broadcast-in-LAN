@@ -7,11 +7,7 @@ Build client-server program:
            * After receiving the ok message from the server, the client closes the connection to the server.
   
 To run the above program, follow these steps:
-- Compile the program
-make all
-- Run the server file you just compiled
-./server
-- Run the client file you just compiled
-./client
-- Clean file
-make clean
+- Compile the program: make all
+- Run the server file you just compiled: ./server
+- Run the client file you just compiled: ./client
+- Clean file: make clean
